@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.jpg" alt="Anggun Dwi Header Banner" width="100%">
+  <img src="assets/logo/banner.jpg" alt="Anggun Dwi Header Banner" width="100%">
 <p align="center"><b>Electronic Engineering Graduate | Automation, PLC & Embedded Systems Specialist</b></p>
 
 <p align="center">
