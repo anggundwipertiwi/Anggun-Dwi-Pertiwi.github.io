@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1530"/>
+      <stop offset="100%" stop-color="#2a1b45"/>
+    </linearGradient>
+    <linearGradient id="liquidGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="280" fill="url(#bgGrad3)"/>
+  <circle cx="200" cy="130" r="130" fill="url(#glow3)"/>
+
+  <!-- beaker -->
+  <path d="M 95 90 L 95 180 Q 95 210 125 210 L 165 210 Q 195 210 195 180 L 195 90"
+        fill="none" stroke="#ede9fe" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 100 150 Q 100 195 130 195 L 160 195 Q 190 195 190 150 Z" fill="url(#liquidGrad3)"/>
+  <line x1="85" y1="90" x2="205" y2="90" stroke="#ede9fe" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- bubbles -->
+  <circle cx="130" cy="175" r="3" fill="#ecfeff" opacity="0.8"/>
+  <circle cx="150" cy="165" r="2" fill="#ecfeff" opacity="0.6"/>
+  <circle cx="168" cy="178" r="2.5" fill="#ecfeff" opacity="0.7"/>
+
+  <!-- DS18B20 probe -->
+  <line x1="115" y1="60" x2="115" y2="160" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+  <rect x="108" y="50" width="14" height="16" rx="3" fill="#1e1530" stroke="#fbbf24" stroke-width="1.5"/>
+
+  <!-- LM35 probe -->
+  <line x1="175" y1="60" x2="175" y2="160" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+  <rect x="168" y="50" width="14" height="16" rx="3" fill="#1e1530" stroke="#f472b6" stroke-width="1.5"/>
+
+  <!-- LabVIEW panel -->
+  <rect x="235" y="55" width="130" height="160" rx="8" fill="#0f0a1a" stroke="#a78bfa" stroke-width="2"/>
+  <rect x="247" y="67" width="106" height="14" rx="3" fill="#2a1b45"/>
+  <text x="300" y="77" text-anchor="middle" font-family="monospace" font-size="9" fill="#c4b5fd">LabVIEW</text>
+
+  <!-- dual comparison lines -->
+  <polyline points="247,150 263,140 279,144 295,122 311,130 327,112 343,120"
+            fill="none" stroke="#fbbf24" stroke-width="2.2"/>
+  <polyline points="247,158 263,152 279,156 295,140 311,146 327,132 343,138"
+            fill="none" stroke="#f472b6" stroke-width="2.2"/>
+  <line x1="247" y1="170" x2="353" y2="170" stroke="#3a2a5c" stroke-width="1"/>
+
+  <!-- legend -->
+  <circle cx="252" cy="184" r="3" fill="#fbbf24"/>
+  <text x="260" y="188" font-family="monospace" font-size="8" fill="#ede9fe">DS18B20</text>
+  <circle cx="252" cy="198" r="3" fill="#f472b6"/>
+  <text x="260" y="202" font-family="monospace" font-size="8" fill="#ede9fe">LM35</text>
+</svg>

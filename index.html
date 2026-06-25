@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Anggun Dwi Pertiwi - Teknik Elektronika | Mikrokontroler & PLC" />
+  <meta name="author" content="Anggun Dwi Pertiwi" />
+  <title>Anggun Dwi Pertiwi | Portofolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%238b5cf6'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='20' fill='white'>A</text></svg>" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-name">Anggun Dwi Pertiwi</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- AMBIENT BLOBS -->
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <div class="ambient ambient-3"></div>
+
+  <!-- PARTICLES CANVAS -->
+  <canvas id="particles-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;"></canvas>
+
+  <!-- ================ NAVIGASI ================ -->
+  <nav>
+    <a class="nav-logo" href="#hero">Anggun <span>·</span> Portfolio</a>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#pendidikan">Pendidikan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ================ HERO ================ -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">✦ Selamat Datang di Portofolio Saya</p>
+          <h1 class="hero-name">
+            Halo, Saya
+            <span class="line2" id="hero-nama">Anggun Dwi Pertiwi</span>
+          </h1>
+          <p class="hero-subtitle">
+            Spesialis&nbsp;<span id="typed-text" style="color:var(--purple-light);border-right:2px solid var(--purple-main);padding-right:3px;">Teknik Elektronika</span>
+          </p>
+          <p class="hero-tagline" id="hero-tagline">Passionate tentang Elektronika &amp; Sistem Kontrol</p>
+          <p class="hero-desc" id="hero-desc">
+            Lulusan Politeknik Negeri Semarang dengan keahlian dalam pemrograman mikrokontroler, PLC, dan troubleshooting elektronika industri...
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#kontak">✉ Hubungi Saya</a>
+            <a class="btn btn-outline" href="dokumen/CV_Anggun.pdf" download>⬇ Unduh CV</a>
+          </div>
+        </div>
+
+        <!-- Foto -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-placeholder">
+            <img class="hero-photo" src="assets/logo/anggun.jpg" alt="Anggun Dwi Pertiwi" />
+          </div>
+          <!-- Ganti dengan: <img class="hero-photo" src="assets/foto.jpg" alt="Anggun Dwi Pertiwi" /> -->
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-hint">
+        <div class="mouse"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ================ TENTANG ================ -->
+    <section id="tentang">
+      <p class="section-label reveal">Tentang Saya</p>
+      <h2 class="section-title reveal">Mengenal Saya <span class="accent">Lebih Dekat</span></h2>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="about-text" id="about-text">
+            Lulusan Politeknik Negeri Semarang jurusan Teknik Elektronika dengan minat kuat di bidang elektronika dan sistem kontrol. Memiliki keahlian dalam pemrograman mikrokontroler dan PLC serta penggunaan perangkat lunak seperti Arduino IDE dan MATLAB. Aktif dalam organisasi mahasiswa dan terbiasa bekerja baik secara individu maupun tim.
+          </p>
+        </div>
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-card">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Pengalaman Magang</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Keahlian Teknis</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Project Elektronika</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Sertifikat BNSP</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Bahasa Dikuasai</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ PENGALAMAN ================ -->
+    <section id="pengalaman">
+      <p class="section-label reveal">Riwayat Kerja</p>
+      <h2 class="section-title reveal">Pengalaman <span class="accent">Profesional</span></h2>
+      <div class="timeline" id="timeline-container">
+        <!-- Diisi oleh JS -->
+      </div>
+    </section>
+
+    <!-- ================ PROYEK ================ -->
+    <section id="proyek">
+      <p class="section-label reveal">Karya yang Telah Dibuat</p>
+      <h2 class="section-title reveal">Proyek <span class="accent">Elektronika</span></h2>
+      <div class="project-grid" id="project-grid">
+        <!-- Diisi JS -->
+      </div>
+    </section>
+
+    <!-- ================ KEAHLIAN ================ -->
+    <section id="keahlian">
+      <p class="section-label reveal">Kemampuan</p>
+      <h2 class="section-title reveal">Keahlian <span class="accent">Saya</span></h2>
+      <div class="skills-grid">
+        <div>
+          <p class="skills-col-title">⚡ Keahlian Teknis</p>
+          <div id="tech-skills"><!-- Diisi JS --></div>
+        </div>
+        <div>
+          <p class="skills-col-title">💡 Soft Skills</p>
+          <div class="soft-tags" id="soft-skills"><!-- Diisi JS --></div>
+
+          <br /><br />
+          <p class="skills-col-title" style="margin-top:32px;">🛠 Perangkat Lunak</p>
+          <div class="soft-tags">
+            <span class="soft-tag">Arduino IDE</span>
+            <span class="soft-tag">MATLAB</span>
+            <span class="soft-tag">PLC Programming</span>
+            <span class="soft-tag">Microsoft Office</span>
+            <span class="soft-tag">Canva</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ PENDIDIKAN ================ -->
+    <section id="pendidikan">
+      <p class="section-label reveal">Latar Belakang</p>
+      <h2 class="section-title reveal">Riwayat <span class="accent">Pendidikan</span></h2>
+      <div class="edu-grid" id="edu-grid">
+        <!-- Diisi JS -->
+      </div>
+    </section>
+
+    <!-- ================ SERTIFIKAT & BAHASA ================ -->
+    <section id="sertifikat">
+      <div class="cert-lang-grid">
+        <div>
+          <p class="section-label reveal">Pencapaian</p>
+          <h2 class="section-title reveal" style="margin-bottom:24px;">Sertifikat <span class="accent">& Penghargaan</span></h2>
+          <div id="cert-container"><!-- Diisi JS --></div>
+        </div>
+        <div>
+          <p class="section-label reveal">Komunikasi</p>
+          <h2 class="section-title reveal" style="margin-bottom:24px;">Kemampuan <span class="accent">Bahasa</span></h2>
+          <div class="lang-list" id="lang-list"><!-- Diisi JS --></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ KONTAK ================ -->
+    <section id="kontak">
+      <p class="section-label reveal" style="justify-content:center;">Hubungi Saya</p>
+      <h2 class="section-title reveal">Mari <span class="accent">Terhubung</span></h2>
+      <p class="contact-subtitle reveal">
+        Tertarik untuk berkolaborasi atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya.
+      </p>
+
+      <div class="contact-grid reveal">
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div class="ci-label">Lokasi</div>
+          <div class="ci-value" id="contact-lokasi">Semarang, Indonesia</div>
+        </div>
+        <a class="contact-item" id="contact-email" href="mailto:anggundwipertiwi18@gmail.com">
+          <div class="ci-icon">✉</div>
+          <div class="ci-label">Email</div>
+          <div class="ci-value">anggundwipertiwi18@gmail.com</div>
+        </a>
+        <a class="contact-item" href="https://wa.me/6287872764581">
+          <div class="ci-icon">📞</div>
+          <div class="ci-label">Telepon</div>
+          <div class="ci-value" id="contact-phone">087872764581</div>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/anggun-dwi-pertiwi-a5485128a?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+          <div class="ci-icon">💼</div>
+          <div class="ci-label">LinkedIn</div>
+          <div class="ci-value">Anggun Dwi Pertiwi</div>
+        </a>
+      </div>
+
+      <div class="cv-download-wrap reveal">
+        <a class="btn btn-primary" href="dokumen/CV_Anggun.pdf" download style="margin:0 auto;display:inline-flex;">
+          ⬇ Unduh CV Lengkap
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================ FOOTER ================ -->
+  <footer>
+    <p>Dibuat <span>♥</span> oleh <span>Anggun Dwi Pertiwi</span> &nbsp;·&nbsp; &copy; 2026</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
